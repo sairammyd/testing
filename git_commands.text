@@ -1,0 +1,317 @@
+    1  clear
+    2  df -h
+    3  fdisk
+    4  fdisk -l
+    5  sudo su -
+    6  init 0
+    7  sudo su -
+    8  lscpu 
+    9  lspci
+   10  clear
+   11  free -m
+   12  clear
+   13  init 0
+   14  clear
+   15  cat /etc/*release*
+   16  uname
+   17  uname -r
+   18  hostname
+   19  sudo yum install java-1.8.0-openjdk
+   20  sudo yum install wget
+   21  wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.0.M10/bin/apache-tomcat-9.0.0.M10.tar.gz
+   22  ls
+   23  tar xzf apache-tomat-9.0.0.M10.tar.gz
+   24  tar xzf apache-tomcat-9.0.0.M10.tar.gz 
+   25  ls
+   26  mkdir tomcat9
+   27  mv apache-tomcat-9.0.0.M10 ./tomcat9/
+   28  cd tomcat9/
+   29  cd apache-tomcat-9.0.0.M10/
+   30  ll
+   31  vi conf/tomcat-users.xml 
+   32  ./bin/startup.sh
+   33  firefox
+   34  yum install firefox
+   35  sudo yum install firefox
+   36  firefox
+   37  export DISPLAY=localhost:0.0
+   38  firefox
+   39  init 0
+   40  sudo init 0
+   41  exit
+   42  clear
+   43  ping test_client
+   44  ping 172.31.13.226
+   45  ifconfig 
+   46  setup
+   47  yum install setup
+   48  sudo yum install setup
+   49  sudo setup
+   50  sudo nmcli
+   51  ping 172.31.13.226
+   52  clear
+   53  vi /etc/hosts
+   54  sudo vi /etc/hosts
+   55  ifconfig 
+   56  vi /etc/hosts
+   57  sudo vi /etc/hosts
+   58  clear
+   59  ping test_clinet
+   60  ping test_client
+   61  clear
+   62  firefox
+   63  DISPLAY export DISPLAY=$HOSTNAME:0.0
+   64  sudo yum install xorg-x11-xauth
+   65  exit
+   66  clear
+   67  firefox &
+   68  kill -9 firefox
+   69  ps -ef | grep firefoc
+   70  ps -ef | grep firefox
+   71  init 0
+   72  clear
+   73  firefox &
+   74  firefox 
+   75  DISPLAY export DISPLAY=$HOSTNAME:0.0
+   76  export DISPLAY=$HOSTNAME:0.0
+   77  firefox 
+   78  yum install gnome
+   79  sudo yum install gnome
+   80  yum groupinstall "GNOME Desktop" -y
+   81  sudo yum groupinstall "GNOME Desktop" -y
+   82  yum grouplisy
+   83  yum grouplist
+   84  sudo yum grouplist
+   85  yum groupinfo "Server with GUI"
+   86  sudo yum groupinfo "Server with GUI"
+   87  sudo yum install "Server with GUI"
+   88  sudo yum groupinstall "GNOME Desktop" -y
+   89  sudo yum groupinstall "Server with GUI" -y
+   90  startx
+   91  init 5
+   92  systemctl enable graphical.target --force
+   93  sudo su -
+   94  firefox
+   95  export DISPLAY=$HOSTNAME:0.0
+   96  firefox
+   97  sudo firefox
+   98  clear
+   99  export DISPLAY=localhost:0.0
+  100  sudo firefox
+  101  exit
+  102  yum info firefox
+  103  sudo yum info firefox
+  104  yum info x
+  105  sudo yum install  xorg-x11-server-Xorg xorg-x11-xauth xorg-x11-apps -y
+  106  clear
+  107  export DISPLAY=localhost:0.0
+  108  firefox &
+  109  firefox 
+  110  sudo firefox 
+  111  sudo vim /etc/ssh/sshd_config
+  112  sudo vi /etc/ssh/sshd_config
+  113  sudo cat /etc/ssh/sshd_config | grep X11
+  114  systemctl restart sshd.services
+  115  sudo systemctl restart sshd.services
+  116  sudo systemctl restart sshd.service
+  117  sudo systemctl restart sshd
+  118  export DISPLAY=localhost:0.0
+  119  export DISPLAY=test_server:0.0
+  120  firefox 
+  121  sudo firefox 
+  122  clear
+  123  firefox
+  124  jenkins
+  125  sudo yum install java-1.8.0-openjdk-devel
+  126  curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+  127  sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+  128  sudo yum install jenkins
+  129  sudo systemctl start jenkins
+  130  sudo systemctl status jenkins
+  131  sudo systemctl enable jenkins
+  132  clear
+  133  sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
+  134  systemctl status firewalld
+  135  ifcong
+  136  ifconfig 
+  137  netstat -antlpu
+  138  clear
+  139  yum install firewalld
+  140  sudo yum install firewalld
+  141  systemctl status firewalld
+  142  systemctl start firewalld
+  143  clear
+  144  systemctl status firewalld
+  145  sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
+  146  sudo firewall-cmd --reload
+  147  clear
+  148   clear
+  149  systemctl stop firewalld
+  150  clear
+  151  getenforce 
+  152  setenforce 0
+  153  sudo setenforce 0
+  154  clear
+  155  getenforce 
+  156  ifconfig 
+  157  sudo firewall-cmd --reload
+  158  getenforce 
+  159  clear
+  160  dns
+  161  cat /etc/hostname 
+  162  systemctl status jenkins
+  163  cat /var/lib/jenkins/secrets/initialAdminPassword
+  164  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  165  ping 13.127.55.76
+  166  ifconfig 
+  167  ssh root@13.127.55.76
+  168  ssh-keygen
+  169  ssh-copy-id root@13.127.55.76
+  170  ssh root@13.127.55.76
+  171  pwd
+  172  cd /root/
+  173  su root
+  174  sudo su -
+  175  clear
+  176  ls
+  177  ifconfig 
+  178  clear
+  179  yum install git
+  180  sudo yum install git
+  181  clear
+  182  git init
+  183  git add README.mdgit commit -m "first commit"
+  184  git commit -m "first commit"
+  185  git config --global sairammyd@gmail.com
+  186  git config --global sairammyd
+  187  run git config --global sairammyd@gmail.com
+  188  git config --global sairammyd@gmail.com
+  189  git config --global git@github.com:sairammyd/learning.git
+  190  git config --global git@github.com:sairammyd
+  191  git config --global user.email sairammyd@gmail.com
+  192  git config --global user.name sairammyd
+  193  git config --list
+  194  clear
+  195  git config --list
+  196  cat ~/.gitconfig 
+  197  ls
+  198  clear
+  199  ls -a
+  200  clear
+  201  mkdir learning
+  202  cd learning/
+  203  git init
+  204  ls -a
+  205  ll -altr .git
+  206  cd learning/
+  207  git add sai.c
+  208  git add *.java
+  209  yum install httpd
+  210  sudo yum install httpd
+  211  cd /var/www/html/
+  212  ls
+  213  yum install apache-tomcat
+  214  sudo yum install apache-tomcat
+  215  sudo yum install apache
+  216  sudo yum install tomcat
+  217  clear
+  218  ls
+  219  cd
+  220  cd /var/www/html/
+  221  vi sairam.html
+  222  clear
+  223  sudo vi /var/www/html/
+  224  sudo vi /var/www/html/index.html
+  225  clear
+  226  systemctl status httpd
+  227  systemctl start httpd
+  228  systemctl status httpd
+  229  cd /var/www/html/
+  230  ls
+  231  systemctl status apache
+  232  systemctl status tomcat
+  233  systemctl start tomcat
+  234  systemctl status tomcat
+  235  clear
+  236  systemctl status git
+  237  systemctl status jenkins
+  238  clear
+  239  ls
+  240  cd learning/
+  241  git init
+  242  git add .
+  243  ls
+  244  vi sairam.txt
+  245  clear
+  246  git add .
+  247  clear
+  248  git commit -m "first commit"
+  249  git remote add orgin git@github.com:sairammyd/learning.git
+  250  git remote -v
+  251  git push origin master
+  252  git remote add orgin git@github.com:sairammyd/learning.git
+  253  date
+  254  clear
+  255  git status
+  256  git show
+  257  ls
+  258  git push
+  259  git push add learning git@github.com:sairammyd/learning.git
+  260  git remote add git@github.com:sairammyd/learning.git
+  261  git remote add origin git@github.com:sairammyd/learning.git
+  262  clear
+  263  git push add learning git@github.com:sairammyd/learning.git
+  264  git remote -v
+  265  git remote add origin ssh://git@github.com:sairammyd/learning.git
+  266  git remote remove myorigin 
+  267  git remote remove learning
+  268  exit
+  269  clear
+  270  ls
+  271  cd learning/
+  272  ls
+  273  git init .
+  274  clear
+  275  ls
+  276  git remote add origin https://github.com/sairammyd/learning.git
+  277  clear
+  278  git status
+  279  git push origin master
+  280  git remote -v
+  281  git remote set-url origin https://github.com/sairammyd/learning.git
+  282  git push
+  283  git push origin master
+  284  git pull origin master
+  285  git push origin master
+  286  ls
+  287  vi file1
+  288  git push origin master
+  289  cat file1 
+  290  clear
+  291  git status
+  292  git add .
+  293  git status
+  294  git commit -m "This is for test"
+  295  git status 
+  296  git push origin master
+  297  history
+  298  clear
+  299  whereis git
+  300  git --version
+  301  clear
+  302   clear
+  303  cd ../
+  304  mkdir testing
+  305  cd testing/
+  306  ls
+  307  git init .
+  308  history
+  309   clear
+  310  git remote add origin git@github.com:sairammyd/testing.git
+  311  clear
+  312  history
+  313  ls
+  314  vi sai.text
+  315  clear
+  316  history
+  317  history >> git_commands.text
