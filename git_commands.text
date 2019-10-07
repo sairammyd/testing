@@ -315,3 +315,24 @@
   315  clear
   316  history
   317  history >> git_commands.text
+  318  ls
+  319  git status
+  320  git commit -m "basic"
+  321  git add .
+  322  git commit -m "basic"
+  323  git status
+  324  clear
+  325  git push origin master
+  326  git pull origin master
+  327  git push -u origin master
+  328  clear
+  329  git push -u origin master
+  330  git remote -v
+  331* git remote set-url origin https://git@github.com:sairammyd/testing.git
+  332  git remote -v
+  333  git push -u origin master
+  334  ssh -Tv git@github.com
+  335  git remote set-url origin https://github.com/sairammyd/testing.git
+  336  clear
+  337  git push -u origin master
+  338  history > git_commands.text 
